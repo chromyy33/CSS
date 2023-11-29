@@ -12,23 +12,27 @@ $color--white: white;
 .flex {
   display: flex;
 }
-.thinAndsmall {
-  font-size: 14px;
-  font-weight: 300;
+.grid {
+  display: grid;
+}
+@mixin basePara($font-weight, $line-height, $font-size) {
+  font-size: $font-size;
+  font-weight: $font-weight;
   color: $color--off-black;
+  line-height: $line-height;
+}
+.thinAndsmall {
+  @include basePara(300, 1.5, 14px);
 }
 .boldAndxsmall {
-  font-size: 12px;
-  font-weight: 600;
+  @include basePara(600, 1.5, 12px);
 }
 .container {
-  max-width: 1296px;
+  max-width: 80rem;
   margin: 0 auto;
   overflow: hidden;
 }
-.mb-9 {
-  margin-bottom: 9rem;
-}
+
 .off {
   display: grid;
   grid-template-columns: 1fr 35rem;
@@ -43,4 +47,14 @@ $color--white: white;
 }
 .bg {
   background-color: $color--primary-light;
+}
+
+//Creating margin-bottom helpers
+
+$base-margin: 1rem;
+
+@for $i from 1 through 10 {
+  .mb-#{$i} {
+    margin-bottom: $base-margin * $i;
+  }
 }

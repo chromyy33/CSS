@@ -1,6 +1,17 @@
-.primary {
-  font-size: 4rem;
+@mixin basefont($font-size, $line-height) {
+  letter-spacing: -1px;
   font-weight: 300;
-  line-height: 1.2;
-  
+  line-height: $line-height;
+  font-size: $font-size;
+}
+
+.primary {
+  @include basefont(4rem, 1.2);
+}
+h2 {
+  @include basefont(3.5rem, 1.5);
+}
+
+h3 {
+  @include basefont(2.5rem, 1.5);
 }
