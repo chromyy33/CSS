@@ -7,6 +7,7 @@
 
 .primary {
   @include basefont(4rem, 1.2);
+
 }
 h2 {
   @include basefont(3.5rem, 1.5);
@@ -15,6 +16,6 @@ h2 {
 h3 {
   @include basefont(2.5rem, 1.5);
 }
-h5{
-  @include basefont(2rem, 1.5)
+h5 {
+  @include basefont(2rem, 1.5);
 }

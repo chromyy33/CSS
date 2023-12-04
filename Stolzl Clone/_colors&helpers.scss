@@ -1,3 +1,7 @@
+@mixin move {
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
 $color--black: black;
 $color--off-black: #333;
 $color--grey: #f4f2f1;
@@ -30,7 +34,8 @@ $color--white: white;
 .container {
   max-width: 80rem;
   margin: 0 auto;
-  overflow: hidden;
+
+  padding: 0 64px;
 }
 
 .off {
@@ -57,4 +62,28 @@ $base-margin: 1rem;
   .mb-#{$i} {
     margin-bottom: $base-margin * $i;
   }
+}
+//Animation Classes
+
+.transXm {
+  @include move;
+  transform: translateX(-50%);
+}
+
+.transXmplus {
+  @include move;
+  transform: translateX(-100%);
+}
+
+.transXp {
+  @include move;
+  transform: translateX(50%);
+}
+.transXpplus {
+  @include move;
+  transform: translateX(75%);
+}
+.transXpplus1 {
+  @include move;
+  transform: translateX(120%);
 }

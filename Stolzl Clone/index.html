@@ -27,8 +27,10 @@
     <!-------------------------------------- Header Start----------------------------->
 
     <header class="header flex container">
-      <h1 class="header--heading primary">Everything is <br />architecture</h1>
-      <div class="header--para-box">
+      <h1 class="header--heading primary transXm">
+        Everything is <br />architecture
+      </h1>
+      <div class="header--para-box transXp">
         <div class="header--para-name boldAndxsmall">Gunta Stölz</div>
         <p class="header--para thinAndsmall">
           As a German textile artist, she played a crucial role in shaping the
@@ -44,17 +46,20 @@
 
     <!------------------------------------------- Section-Image Start-------------------------->
     <main>
-      <section class="container mb-9">
+      <div class="hero--img container mb-9">
         <img
           src="https://assets-global.website-files.com/6439b7d861c4a614f742250a/6511d0094f94123344a916b7_473Agency-Stolzl-Webflow-Template-7.jpg"
           alt=""
           class="hero-img"
         />
-      </section>
+      </div>
+
       <!------------------------------------------- Section-Image End----------------------------->
+
+      <!------------------------------------------- About Start---------------------------------->
       <section class="bg mb-9">
         <div class="off">
-          <p class="about">
+          <p class="about transXp">
             Her textile creations are considered emblematic of the unique style
             of Bauhaus textiles. She enrolled in the Bauhaus as a student in
             1919 and was later appointed a junior master in 1927. However, she
@@ -67,11 +72,15 @@
           <div class="empty"></div>
         </div>
       </section>
+      <!------------------------------------------- About End---------------------------------->
+
+      <!------------------------------------------- History Start---------------------------------->
+
       <section class="history container mb-9">
         <div class="wrapper grid">
           <div class="text-wrapper flex">
-            <h3>From Weimar to Dessau</h3>
-            <p class="thinandSmall">
+            <h3 class="transXm about-heading">From Weimar to Dessau</h3>
+            <p class="thinandSmall transXmplus about-para">
               In no time, she assumed the role of a mentor to fellow students
               and revived the Bauhaus dye studios in 1921. Following a short
               break, Stölzl returned to the school and was appointed as the
@@ -85,10 +94,12 @@
             alt="An abstract image, of a house"
           />
         </div>
+        <!------------------------------------------- History End---------------------------------->
+        <!------------------------------------------- Projects Start---------------------------------->
       </section>
       <section class="projects bg mb-9">
         <div class="projects--container container">
-          <h2>Projects</h2>
+          <h2 class="transXm projects-heading">Projects</h2>
           <div class="projects--grid grid">
             <div class="projects--row grid">
               <div class="projects--img">
@@ -98,18 +109,20 @@
                 />
               </div>
               <div class="projects--row--text-box flex">
-                <h5 class="projects--row--heading mb-1">Osloer Straße 114</h5>
-                <p class="thinAndsmall mb-1">
+                <h5 class="projects--row--heading transXp mb-1">
+                  Osloer Straße 114
+                </h5>
+                <p class="thinAndsmall mb-1 transXpplus project-para">
                   Berlin-Wedding is not only trendy, but also one of the best
                   investment spots in the German capital. Guthmann Estate is
                   offering the second highly interesting investment property
                   here within a short time. Osloer Straße 114, built in 1910.
                 </p>
-                <div class="projects--link--wrapper flex mb-1">
+                <div class="projects--link--wrapper flex mb-1 transXpplus1">
                   <a href="#">Cultural</a>
                   <a href="#">Residential</a>
                 </div>
-                <a href="#" class="projects--link">View Project</a>
+                <a href="#" class="projects--link transXm">View Project</a>
               </div>
               <div class="separator"></div>
             </div>
@@ -122,22 +135,24 @@
                 />
               </div>
               <div class="projects--row--text-box flex">
-                <h5 class="projects--row--heading mb-1">Görlitzer Str. 3</h5>
-                <p class="thinAndsmall mb-1">
+                <h5 class="projects--row--heading mb-1 transXp">
+                  Görlitzer Str. 3
+                </h5>
+                <p class="thinAndsmall mb-1 project-para transXpplus">
                   Necessitatibus asperiores sed corporis reprehenderit tempore
                   soluta aut consequatur. Dolor possimus aperiam magni. Rerum
                   molestias ut occaecati quod et assumenda.
                 </p>
-                <div class="projects--link--wrapper flex mb-1">
+                <div class="projects--link--wrapper flex mb-1 transXpplus1">
                   <a href="#" class="link">Cultural</a>
                 </div>
-                <a href="#" class="projects--link">View Project</a>
+                <a href="#" class="projects--link transXm">View Project</a>
               </div>
               <div class="separator"></div>
             </div>
           </div>
-          <div class="flex">
-            <a href="#" class="projects--link">All Projects</a
+          <div class="flex project-wrapper transXm">
+            <a href="#" class="projects--link ">All Projects</a
             ><svg
               width="16"
               height="16"
@@ -154,6 +169,8 @@
           </div>
         </div>
       </section>
+      <!------------------------------------------- Project End---------------------------------->
     </main>
   </body>
+  <script src="/Stolzl Clone/index.js"></script>
 </html>

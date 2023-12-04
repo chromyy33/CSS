@@ -24,7 +24,7 @@
 .container {
   max-width: 80rem;
   margin: 0 auto;
-  overflow: hidden;
+  padding: 0 64px;
 }
 
 .off {
@@ -85,6 +85,36 @@
   margin-bottom: 10rem;
 }
 
+.transXm {
+  opacity: 0;
+  transition: all ease-in-out 1s;
+  transform: translateX(-50%);
+}
+
+.transXmplus {
+  opacity: 0;
+  transition: all ease-in-out 1s;
+  transform: translateX(-100%);
+}
+
+.transXp {
+  opacity: 0;
+  transition: all ease-in-out 1s;
+  transform: translateX(50%);
+}
+
+.transXpplus {
+  opacity: 0;
+  transition: all ease-in-out 1s;
+  transform: translateX(75%);
+}
+
+.transXpplus1 {
+  opacity: 0;
+  transition: all ease-in-out 1s;
+  transform: translateX(120%);
+}
+
 .nav {
   min-height: 4.5rem;
   justify-content: space-between;
@@ -96,6 +126,7 @@
 }
 .nav--links {
   align-items: center;
+  overflow: hidden;
 }
 .nav--link {
   width: fit-content;
@@ -135,11 +166,15 @@
 }
 
 .hero-img {
+  width: 100%;
   max-width: 80rem;
   object-fit: cover;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: all 2s ease;
 }
 
-p.about {
+.about {
   font-size: 1.125rem;
   line-height: 1.5;
 }
@@ -147,6 +182,7 @@ p.about {
 .wrapper {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5rem;
+  overflow: hidden;
 }
 .wrapper img {
   height: 40rem;
@@ -160,10 +196,15 @@ p.about {
 }
 .text-wrapper h3 {
   margin-bottom: 16px;
+  transition: all 0.5s ease;
+}
+.text-wrapper p {
+  transition: all 1s ease;
 }
 
 .projects--container {
   padding: 9rem 5%;
+  overflow: hidden;
 }
 .projects h2 {
   margin-bottom: 3rem;
@@ -174,6 +215,7 @@ p.about {
 .projects--row {
   grid-template-columns: 1fr 1fr;
   column-gap: 5rem;
+  overflow: hidden;
 }
 .projects--row img {
   height: 40rem;
@@ -377,6 +419,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .primary {
